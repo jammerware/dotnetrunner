@@ -17,7 +17,6 @@ namespace DotNetRunner.Models
         public string FlavorText { get; set; }
         public string Illustrator { get; set; }
         [JsonProperty(PropertyName = "imagesrc")]
-        [JsonConverter(typeof(PrependUrlBaseConverter))]
         public string ImageUrl { get; set; }
         public bool IsUnique { get; set; }
         [JsonProperty(PropertyName = "last-modified")]
